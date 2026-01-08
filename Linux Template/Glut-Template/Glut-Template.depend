@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1767888686 source:d:\github\computer-graphics-lab\linux template\glut-template\main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<math.h>
+

@@ -1,4 +1,0 @@
-glbegin()
-glend()
-
-clockwise kaj kore 
