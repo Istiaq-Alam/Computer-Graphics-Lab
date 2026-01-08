@@ -960,3 +960,8 @@
 	<stdlib.h>
 	<math.h>
 
+1767886912 source:/media/spyder/Secondary-Disk/Github/Computer-Graphics-Lab/Windows Template/Freeglut-Template/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<math.h>
+
