@@ -950,3 +950,8 @@
 	<GL/glut.h>
 	<stdlib.h>
 
+1767882279 source:d:\github\computer-graphics-lab\freeglut-template\main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<math.h>
+
