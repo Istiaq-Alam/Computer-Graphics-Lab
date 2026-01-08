@@ -10,8 +10,8 @@ For more information on freeglut, visit http://freeglut.sourceforge.net/.
 ## Installation
 
 Create a folder on your PC which is readable by all users, for example
-“C:\Program Files\Common Files\MinGW\freeglut\” on a typical Windows system.
-Copy the “lib\” and “include\” folders from this zip archive to that location.
+`“C:\Program Files\Common Files\MinGW\freeglut\”` on a typical Windows system.
+Copy the `“lib\”` and `“include\”` folders from this zip archive to that location.
 
 The appropriate freeglut DLL can either be placed in the same folder as your
 application, or can be installed in a system-wide folder which appears in your
@@ -29,10 +29,10 @@ Given a source file “test.c”, which you want to compile to an application
 “test.exe” dynamically linking to the DLL, you can compile and link it with the
 following commands (replacing the include and lib paths with the ones you
 created above if necessary):
-`
+```
   gcc -c -o test.o test.c -I"C:\Program Files\Common Files\MinGW\freeglut\include"
   gcc -o test.exe test.o -L"C:\Program Files\Common Files\MinGW\freeglut\lib" -lfreeglut -lopengl32 -Wl,--subsystem,windows
-`
+```
 Don’t forget to either include the freeglut DLL when distributing applications,
 or provide your users with some method of obtaining it if they don’t already
 have it!
@@ -43,10 +43,10 @@ have it!
 Building 64 bit applications is almost identical to building 32 bit applications.
 The only difference is that you should change the library path on the command
 line to point to the x64 directory:
-`
+```
   gcc -c -o test.o test.c -I"C:\Program Files\Common Files\MinGW\freeglut\include"
   gcc -o test.exe test.o -L"C:\Program Files\Common Files\MinGW\freeglut\lib\x64" -lfreeglut -lopengl32 -Wl,--subsystem,windows
-`
+```
 
 ## Static Linking
 
@@ -54,10 +54,10 @@ To statically link the freeglut library into your application, it’s necessary 
 define “FREEGLUT_STATIC” when compiling the object files. It’s also necessary to
 link the static version of the freeglut library, along with the GDI and Windows
 multimedia libraries which freeglut depends upon:
-`
+```
   gcc -c -o test.o test.c -D FREEGLUT_STATIC -I"C:\Program Files\Common Files\MinGW\freeglut\include"
   gcc -o test.exe test.o -L"C:\Program Files\Common Files\MinGW\freeglut\lib" -lfreeglut_static -lopengl32 -lwinmm -lgdi32 -Wl,--subsystem,windows
-`
+```
 The “-Wl,--subsystem,windows” is needed in each case so that the application
 builds as a Windows GUI application rather than a console application. If you
 are using GLU functions you should also include “-lglu32” on the command line.
