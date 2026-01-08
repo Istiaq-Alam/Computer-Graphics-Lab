@@ -1,3 +1,7 @@
+# FreeGLUT Installation & Setup on Windows11 (Code::Blocks)
+[Tutorial](https://www.youtube.com/watch?v=7rLo69vCooU)
+
+
 # FreeGLUT Installation & Setup on Kali Linux (Code::Blocks)
 
 **Step-by-Step with Error Fixes**
