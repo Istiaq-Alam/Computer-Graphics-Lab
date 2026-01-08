@@ -2,4 +2,4 @@
 # Course Code : CSE4203
 ## Lab Task-1 :
 - Date : 08-01-26
-- Task : 
+- Task : Installation of FreeGlut 
