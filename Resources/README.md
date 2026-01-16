@@ -22,11 +22,11 @@ sudo apt upgrade -y
 This is the **most important step**. Install both **runtime** and **development** libraries.
 
 ```bash
-sudo apt install -y \
-freeglut3 freeglut3-dev \
-libglu1-mesa libglu1-mesa-dev \
-libgl1-mesa-dev \
-libxxf86vm1 libxxf86vm-dev \
+sudo apt install -y &&
+freeglut3 freeglut3-dev &&
+libglu1-mesa libglu1-mesa-dev &&
+libgl1-mesa-dev &&
+libxxf86vm1 libxxf86vm-dev &&
 mesa-utils
 ```
 
