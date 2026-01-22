@@ -58,7 +58,6 @@ void display(void)
 	glPushMatrix();
 
     glColor3f(1.0f, 1.0f, 1.0f);  // Set color to white
-
     glBegin(GL_QUADS);  // Draw a square
         glVertex3d(2.0, 5.0, 0.0);
         glVertex3d(10.0, 5.0, 0.0);
@@ -69,6 +68,21 @@ void display(void)
 	glColor3f(0.7, 0.2, 0.3);
     DrawCircle(6,7.5f,1.5f,1.5f,100);
     glPopMatrix();
+
+    glColor3f(0.3f, 0.0f, 0.0f);
+    glBegin(GL_QUADS);  // Draw a square
+        glVertex3d(1.0, -8.0, 0.0);
+        glVertex3d(2.0, -8.0, 0.0);
+        glVertex3d(2.0, 10.0, 0.0);
+        glVertex3f(1.0, 10.0, 0.0);
+    glEnd();
+
+    glColor3f(0.9f, 1.0f, 0.3f);
+        glBegin(GL_TRIANGLES);
+        glVertex3d(1,10,0);
+        glVertex3d(2,10,0);
+        glVertex3d(1.5f,10.5f,0);
+    glEnd();
 
 	glFlush();
 }

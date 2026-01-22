@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1769074725 source:/media/spyder/Secondary-Disk/Github/Computer-Graphics-Lab/Lab Task-02/main.cpp
+1769075637 source:/media/spyder/Secondary-Disk/Github/Computer-Graphics-Lab/Lab Task-02/main.cpp
 	<GL/glut.h>
 	<stdlib.h>
 	<math.h>
