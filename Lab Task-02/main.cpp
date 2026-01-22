@@ -35,7 +35,7 @@ void DrawCircle(float cx, float cy, float rx,float ry, int num_segments)
 	glBegin(GL_TRIANGLE_FAN);
 	for(int ii = 0; ii < num_segments; ii++)
 	{
-		float theta = (3.1415926f/2.0f) - 3.1415926f * float(ii) / float(num_segments);//get the current angle
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);//get the current angle
 
 		float x = rx * cosf(theta);         //calculate the x component
 		float y = ry * sinf(theta);         //calculate the y component
@@ -47,8 +47,8 @@ void DrawCircle(float cx, float cy, float rx,float ry, int num_segments)
 }
 void init(void)
 {
-	glClearColor (0.0, 0.6, 0.2, 0.0);      // green color
-	 glOrtho(-500.0, 500.0, -500.0, 500.0, -1.0, 1.0);
+	glClearColor (0.0, 0.0, 0.0, 0.0);
+	 glOrtho(-20.0, 20.0, -20.0, 20.0, -1.0, 1.0);
 }
 
 void display(void)
@@ -57,9 +57,17 @@ void display(void)
     glClear(GL_COLOR_BUFFER_BIT);
 	glPushMatrix();
 
-	glColor3f(0.7, 0.2, 0.3);
+    glColor3f(1.0f, 1.0f, 1.0f);  // Set color to white
 
-    DrawCircle(0,0,200,200,100);
+    glBegin(GL_QUADS);  // Draw a square
+        glVertex3d(2.0, 5.0, 0.0);
+        glVertex3d(10.0, 5.0, 0.0);
+        glVertex3d(10.0, 10.0, 0.0);
+        glVertex3f(2.0, 10.0, 0.0);
+    glEnd();
+
+	glColor3f(0.7, 0.2, 0.3);
+    DrawCircle(6,7.5f,1.5f,1.5f,100);
     glPopMatrix();
 
 	glFlush();
@@ -82,5 +90,13 @@ int main(int argc, char** argv)
 // THETA = Q_start + (Q_end - Q_start) * (i/N)
 //       = 0 + (2pie - 0) * (i/N)
 //       = 2pie * (i/N)
+
+
+//
+
+
+
+
+
 
 
