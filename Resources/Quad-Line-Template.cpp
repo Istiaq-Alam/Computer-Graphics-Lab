@@ -51,7 +51,7 @@ int main(int argc, char** argv)
     glutInit(&argc, argv);  // Initialize GLUT with command-line arguments
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  // Set display mode
     glutInitWindowSize(600, 600);  // Set window size
-    glutInitWindowPosition(400, 200);  // Set window position
+    glutInitWindowPosition(650, 200);  // Set window position
     glutCreateWindow("Shape");  // Create the window
 
     init();  // Initialize OpenGL settings
