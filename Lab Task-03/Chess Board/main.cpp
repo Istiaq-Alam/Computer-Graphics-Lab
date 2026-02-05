@@ -13,7 +13,7 @@
 void init()
 {
     glClearColor(0.0f, 0.8f, 1.0f, 0.0f); // Background color
-    glOrtho(-100, 100, -100, 100, -1, 1);  // Set up an orthogonal view
+    glOrtho(-100, 100, -100, 100, -10, 10);  // Set up an orthogonal view
 }
 
 void display(void)
@@ -54,9 +54,9 @@ int main(int argc, char** argv)
 {
     glutInit(&argc, argv);  // Initialize GLUT with command-line arguments
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  // Set display mode
-    glutInitWindowSize(600, 600);  // Set window size
+    glutInitWindowSize(700, 700);  // Set window size
     glutInitWindowPosition(650, 200);  // Set window position
-    glutCreateWindow("Chess");  // Create the window
+    glutCreateWindow("Chess Board");  // Create the window
 
     init();  // Initialize OpenGL settings
     glutDisplayFunc(display);  // Register the display function

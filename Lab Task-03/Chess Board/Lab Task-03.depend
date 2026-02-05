@@ -187,3 +187,8 @@
 	<bits/mathcalls-narrow.h>
 	<bits/iscanonical.h>
 
+1770281897 source:/media/spyder/Secondary-Disk/Github/Computer-Graphics-Lab/Lab Task-03/Chess Board/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<math.h>
+
