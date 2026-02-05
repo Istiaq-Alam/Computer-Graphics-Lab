@@ -9,13 +9,13 @@
 #include <stdlib.h>
 #include <math.h>
 #define PI 3.14159265358979323846
-//float p=-2.3;
+
 
 // Draw filled circle
 void DrawCircle(float cx, float cy, float rx, float ry, int segments)
 {
     glBegin(GL_TRIANGLE_FAN);
-    glVertex2f(12, 12); // center point
+    glVertex2f(cx, cy); // center point
     for (int i = 0; i <= segments; i++)
     {
         float theta = 2.0f * PI * i / segments;
