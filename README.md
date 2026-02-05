@@ -8,3 +8,7 @@
 ## Lab Task-02 : 
 * Date : 22-01-26
 * Task : Draw Japan's Flag 
+
+## Lab Task-03 : 
+* Date : 05-02-26
+* Task : Usage of Loop & Draw Emoji
