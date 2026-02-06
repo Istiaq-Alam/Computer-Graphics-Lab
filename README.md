@@ -11,4 +11,5 @@
 
 ## Lab Task-03 : 
 * Date : 05-02-26
-* Task : Usage of Loop & Draw Emoji
+* Work : Usage of Loop 
+* Task : Draw Emoji using Glut
