@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1776329551 source:/media/spyder/Secondary-Disk/Github/Computer-Graphics-Lab/Lab Task-05/Object-Control/main.cpp
+1776334106 source:/media/spyder/Secondary-Disk/Github/Computer-Graphics-Lab/Lab Task-05/Car-Object/main.cpp
 	<GL/glut.h>
 	<stdlib.h>
 	<unistd.h>

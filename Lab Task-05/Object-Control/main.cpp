@@ -1,15 +1,9 @@
 /*
- * GLUT Shapes Demo
+ * GLUT Object-Controlling Demo
  *
- * Written by Nigel Stewart November 2003
+ * Lab-05 ;
+ * 16 April, 2026
  *
- * This program is test harness for the sphere, cone
- * and torus shapes in GLUT.
- *
- * Spinning wireframe and smooth shaded shapes are
- * displayed until the ESC or q key is pressed.  The
- * number of geometry stacks and slices can be adjusted
- * using the + and - keys.
  */
 
 #include <GL/glut.h>
