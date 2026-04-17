@@ -13,3 +13,6 @@
 * Date : 05-02-26
 * Work : Usage of Loop 
 * Task : Draw Emoji using Glut
+
+## Lab Task-04 :
+* Date : 
